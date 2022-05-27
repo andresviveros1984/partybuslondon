@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  height: 100vh;
+}
+
+header {
+ height: 14vh;
+ width: 100%;
+ background-color: black;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ /* position: fixed; */
+}
+
+header .logo{
+  padding-left: 10px;
+}
+
+
+nav a {
+  color:rgb(201, 179, 57);
+  text-decoration: none;
+  margin: 10px;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.fa-bars {
+  color:rgb(201, 179, 57);
+
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+.fa-instagram, .fa-facebook-square {
+  color:rgb(201, 179, 57);
+  margin: 10px;
+}
+
+nav a:hover {
+  background-color:rgb(201, 179, 57);
+  color: white;
+}
+
+/* .fa-bars:hover {
+  /* background-color:rgb(201, 179, 57); 
+  color:rgb(201, 179, 57);;
+} */
+
+
+main {
+  background-color:black;
+}
+
+.slide-show-area {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-show-area img {
+  /* height: 100%; */
+  width: 80%;
+}
+
+
+footer {
+  background-color:black;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+.nav-link-to-bars{
+  display: none;
+}
+
+.social-responsive {
+  display: none;
+}
+
+
+@media only screen and (max-width:709px){
+  nav a{
+    margin: 10px;
+  }
+}
+@media only screen and (max-width:701px){
+  nav {
+    display: none;
+  }
+  .social-responsive {
+    display: block;
+  }
+  .social {
+    display: none;
+  }
+}
+
